@@ -1,0 +1,50 @@
+kubectl exec <name of pod> ls
+
+kubectl -it exec <name of pod> /bash/bin //depricated
+
+minikube kubectl -- exec --stdin --tty  <name of pod> -- /bash/bin
+
+minikube kubectl -- exec --stdin --tty  <name of pod> -- /bash/bin
+
+redis-cli -h host -p port
+
+redis-cli -h 192.168.59.103 -p 30080
+
+kubectl log -f <name of pod>
+
+
+minikube service --url <service name>
+
+
+=============================
+helm list
+
+helm repo update
+
+helm init --stable-repo-url=https://charts.helm.sh/stable --client-only 
+
+helm env
+
+
+helm install redis-chart redis-chart/ --values redis-chart/values.yaml 
+
+helm delete redis-chart
+
+helm install test-redis --name
+
+helm template redis-chart/
+
+
+
+helm install redis-chart --name=test-redis
+
+helm install redis-chart --namespace ns 
+
+helm install redis-chart --namespace ns  --generate-name
+
+kubectl create namespace dev 
+
+helm list --all-namespaces
+helm list -n ns
+==========================
+https://artifacthub.io/
